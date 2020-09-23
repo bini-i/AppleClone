@@ -42,6 +42,7 @@ h1 {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -133,6 +134,7 @@ nav i {
   width: 100%;
   height: 540px;
   color: white;
+  margin-bottom: 5px;
 }
 
 .banner-text {
@@ -171,4 +173,18 @@ nav i {
 
 .banner a:hover {
   text-decoration: underline;
+}
+.advertisement ul
+{
+ display: flex;
+
+}
+.advertisement
+{
+ width: 1200px;
+ overflow: hidden;
+}
+.advertisement li
+{
+    width: 300px;
 }
