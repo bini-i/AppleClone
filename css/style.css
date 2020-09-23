@@ -28,70 +28,147 @@ ul,
 li {
   display: block;
   list-style: none;
-  /* background: transparent; */
 }
 
 /* Global settings */
 
+p,
+a,
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
 
 /* Navigation */
+
 body {
   display: flex;
   justify-content: center;
-  background-image: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
-  background-repeat: no-repeat;
-  background-position: -100px -746px;
 }
 
 nav {
   position: absolute;
   top: 80px;
-  left: 180px;
+  left: auto;
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 4px;
   height: 35px;
-  background-image: linear-gradient(#868686 50%, #616161 50% , #868686);
+  background-image: linear-gradient(#868686 48%, #616161 52%, #868686);
 }
 
 nav li {
-  width: 100px;
   height: 100%;
-  /* padding: 8px 35px; */
-  border-right: solid black 1px;
-  color: white;
   display: grid;
   place-items: center;
-  font-size: 13px;
-  font-weight: bold;
 }
 
-nav li:last-child {
-  border: 0;
+nav li:hover {
+  background-image: linear-gradient(#565656 48%, #393939 52%, #565656);
 }
 
-nav input {
-  width: 80%;
-  border: solid black 2px;
-  border-radius: 10px;
+nav li a {
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 100%;
+  border-right: solid black 1px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
 }
-nav i {
-  position: absolute;
-  font-size: 12px;
-  padding: 13px 15px;
-}
+
 .apple-logo {
   position: relative;
   overflow: hidden;
-  /* z-index: 5; */
 }
 
 .apple-logo img {
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: -30px;
+}
+
+nav li:last-child {
+  width: 130px;
+  border: 0;
+}
+
+nav li:last-child:hover {
+  background: inherit;
+}
+
+nav input {
+  display: grid;
+  place-items: center;
+  width: 90%;
+  border: solid gray 2px;
+  border-style: inset;
+  border-radius: 10px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+/* nav input:focus {
+  background: white;
+} */
+
+nav i {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  padding: 13px 12px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
+  background-repeat: no-repeat;
+  background-position: -100px -746px;
+  width: 100%;
+  height: 540px;
+  color: white;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  height: 230px;
+}
+
+.banner h1 {
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.banner p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.banner .link {
+  display: flex;
+  align-items: center;
+}
+
+.banner a {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.banner .link i {
+  margin-left: 10px;
+}
+
+.banner a:hover {
+  text-decoration: underline;
 }
