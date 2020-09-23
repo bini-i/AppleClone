@@ -38,6 +38,9 @@ li {
 body {
   display: flex;
   justify-content: center;
+  background-image: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
+  background-repeat: no-repeat;
+  background-position: -100px -746px;
 }
 
 nav {
