@@ -70,6 +70,7 @@ nav ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border-top: black;
   border-radius: 5px;
   height: 35px;
   background-image: linear-gradient(#7a7a7a 49%, #616161 48%, #7a7a7a);
@@ -132,9 +133,10 @@ nav input {
   font-size: 12px;
 }
 
-/* nav input:focus {
+nav input:focus {
   background: white;
-} */
+  color: black;
+} 
 nav i {
   position: absolute;
   font-size: 12px;
