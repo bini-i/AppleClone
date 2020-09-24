@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/bini-i/AppleClone/Building_with_Backgrounds_and_Gradients/index.html)
+[Live Demo Link](https://raw.githack.com/bini-i/AppleClone/master/index.html)
 
 ## Authors
 
