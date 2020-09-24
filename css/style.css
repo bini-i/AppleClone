@@ -73,7 +73,7 @@ nav ul {
   border-top: black;
   border-radius: 5px;
   height: 35px;
-  background-image: linear-gradient(#7a7a7a 49%, #616161 48%, #7a7a7a);
+  background-image: linear-gradient(#616161 0%, #7a7a7a 7%, #7a7a7a 47%, #616161 50%, #7a7a7a, #7a7a7a 93%, #616161);
 }
 
 nav li {
@@ -136,7 +136,8 @@ nav input {
 nav input:focus {
   background: white;
   color: black;
-} 
+}
+
 nav i {
   position: absolute;
   font-size: 12px;
