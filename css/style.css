@@ -31,21 +31,35 @@ li {
 }
 
 /* Global settings */
-
 p,
 a,
 h1 {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Navigation */
-
-body {
+html {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
+body {
+  width: 1350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: rgb(0, 136, 204);
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Navigation */
 nav {
   position: absolute;
   top: 80px;
@@ -56,9 +70,9 @@ nav ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 5px;
   height: 35px;
-  background-image: linear-gradient(#868686 48%, #616161 52%, #868686);
+  background-image: linear-gradient(#7a7a7a 49%, #616161 48%, #7a7a7a);
 }
 
 nav li {
@@ -74,12 +88,13 @@ nav li:hover {
 nav li a {
   display: grid;
   place-items: center;
-  width: 100px;
+  min-width: 100px;
   height: 100%;
-  border-right: solid black 1px;
+  border-right: solid #9c9c9c8f 2px;
+  border-style: groove;
   color: white;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .apple-logo {
@@ -106,35 +121,39 @@ nav input {
   display: grid;
   place-items: center;
   width: 90%;
+  height: 60%;
   border: solid gray 2px;
   border-style: inset;
   border-radius: 10px;
   padding-left: 20px;
   box-sizing: border-box;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
 }
 
 /* nav input:focus {
   background: white;
 } */
-
 nav i {
   position: absolute;
   font-size: 12px;
   color: white;
-  padding: 13px 12px;
+  padding: 12px 12px;
 }
 
+/* Banner */
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
   background-repeat: no-repeat;
-  background-position: -100px -746px;
+  background-position: -45px -777px;
   width: 100%;
-  height: 540px;
+  height: 535px;
   color: white;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .banner-text {
@@ -151,40 +170,83 @@ nav i {
   font-weight: 100;
 }
 
-.banner p {
+.banner-text p {
   text-align: center;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: 300;
+  margin-top: -30px;
+  line-height: 1.3;
 }
 
-.banner .link {
+.banner-link {
   display: flex;
   align-items: center;
 }
 
 .banner a {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
+  line-height: 0.8;
+  box-sizing: border-box;
 }
 
-.banner .link i {
+.banner-link a:hover {
+  border-bottom: solid white 0.1px;
+}
+
+.banner-link i {
   margin-left: 10px;
 }
 
-.banner a:hover {
-  text-decoration: underline;
+/* advertisement section */
+.advertisement ul {
+  display: flex;
 }
-.advertisement ul
-{
- display: flex;
 
+.advertisement img {
+  width: 335px;
+  margin-right: 2px;
 }
-.advertisement
-{
- width: 1200px;
- overflow: hidden;
+
+/* Footer */
+footer {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+  font-size: 10px;
+  color: gray;
 }
-.advertisement li
-{
-    width: 300px;
+
+.policy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.policy p {
+  margin-bottom: 20px;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-nav .link a {
+  float: left;
+  margin-right: 8px;
+  padding-right: 8px;
+  border-right: solid #9c9c9c8f 1.5px;
+}
+
+.bottom-nav:last-child {
+  border: 0;
+}
+
+.bottom-nav img {
+  width: 16px;
+  height: 16px;
 }
